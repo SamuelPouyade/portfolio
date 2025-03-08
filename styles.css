@@ -150,4 +150,72 @@ footer {
         font-size: 0.8rem;
         padding: 8px;
     }
+
+    .texte-parcours {
+        max-width: 700px;
+        margin: auto;
+        text-align: justify;
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .texte-parcours img {
+        width: 130px;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .logo-gauche, .logo-droite {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+    
+    .logo-gauche {
+        left: 20px;
+    }
+    
+    .logo-droite {
+        right: 20px;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(255,255,255,0.2);
+        backdrop-filter: blur(5px);
+        font-size: 0.9rem;
+    }
+    
+    /* Responsive sur mobile */
+    @media (max-width: 768px) {
+        body {
+            flex-direction: column;
+            padding: 10px;
+            height: auto;
+        }
+    
+        .texte-parcours {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+        }
+    
+        .logo-gauche, .logo-droite {
+            margin-bottom: 15px;
+        }
+    
+        .texte-parcours img {
+            width: 100px;
+        }
+    }
 }
