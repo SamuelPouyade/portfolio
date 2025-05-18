@@ -9,39 +9,113 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Menu</a>
-        <a href="mes-projets.html">Mes Projets</a>
-        <a href="mon-parcours.html">Mon Parcours</a>
-        <a href="mes-competences.html">Mes Compétences</a>
-        <a href="mes-centres-interet.html">Mes Centres d'intérêts</a>
-    </nav>
 
-    <div class="container text-center my-5">
-        <div class="row align-items-center">
-            <div class="col-md-3 text-md-start">
-                <img src="logo-legrand.jpeg" alt="Legrand" class="img-fluid" style="max-width: 100px;">
-            </div>
-            <div class="col-md-6">
-                <h2>Mon Parcours</h2>
-                <p>
-                    Mon parcours professionnel se divise en plusieurs étapes. Avant d'entrer dans le monde de l'informatique, j'ai travaillé deux mois dans le domaine agricole. 
-                    Ces expériences m'ont permis d'observer le monde du travail et d'apprécier l'importance du travail d'équipe. 
-                    Grâce à mon parcours universitaire et mon bagage technique, j'ai eu l'opportunité d'effectuer mon stage de deuxième année au sein du <strong>Groupe Legrand</strong>, 
-                    suivi d'un job d'été, puis d'une alternance pour ma troisième et dernière année de <strong>BUT informatique</strong>.
-                    Après mon BUT, je souhaite poursuivre un master pour perfectionner mes compétences en développement et approfondir la gestion d'équipe.
-                </p>
-            </div>
-            <div class="col-md-3 text-md-end">
-                <img src="logo-iut.jpeg" alt="IUT Limoges" class="img-fluid" style="max-width: 100px;">
-            </div>
-        </div>
+<nav>
+    <a href="index.html">Menu</a>
+    <a href="mes-projets.html">Mes Projets</a>
+    <a href="mon-parcours.html">Mon Parcours</a>
+    <a href="mes-competences.html">Mes Compétences</a>
+    <a href="mes-centres-interet.html">Mes centres d'intérêts</a>
+</nav>
+
+<div class="container my-5">
+    <div class="text-center">
+        <h2>Mon Parcours</h2>
+        <p class="lead mt-3">
+            Mon parcours est marqué par une évolution constante dans le domaine du développement informatique. J’ai commencé par un BUT Informatique, puis poursuivi par une Licence, avec comme objectif de rejoindre un Master axé sur la data, l’IA ou la gestion de projet technique.
+        </p>
     </div>
 
-    <footer>
-        &copy; 2025 Pouyade Samuel. Tous droits réservés.
-    </footer>
+    <hr class="my-4">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <h4 class="text-success mt-5">🎓 Formation universitaire</h4>
+    <ul class="list-group list-group-flush mb-5">
+        <li class="list-group-item bg-transparent text-dark">
+            <strong>BUT Informatique</strong> – IUT du Limousin (2021–2024)<br>
+            Spécialisation en développement, bases de données et gestion de projet.
+        </li>
+        <li class="list-group-item bg-transparent text-dark">
+            <strong>Licence Informatique</strong> – Université de Limoges (2024–2025)<br>
+            Année de spécialisation approfondie avant un Master.
+        </li>
+        <li class="list-group-item bg-transparent text-dark">
+            <strong>Master (prévu)</strong> – 2025–2027<br>
+            Objectif : se perfectionner en traitement de la donnée, IA ou architecture logicielle.
+        </li>
+    </ul>
+
+    <h4 class="text-success mt-4">💼 Expériences professionnelles</h4>
+    <div class="row gy-4 mt-3">
+
+        <!-- Expérience 1 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Développeur informatique – CICOA (Assurance Maladie)</h5>
+                    <p class="card-text">
+                        <strong>Stage</strong> – mars 2025 à aujourd’hui<br>
+                        Travail sur des systèmes Unix, PL/SQL, automatisation de traitements internes.
+                    </p>
+                    <span class="badge bg-secondary">PL/SQL</span>
+                    <span class="badge bg-secondary">Unix</span>
+                    <span class="badge bg-secondary">Systèmes</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expérience 2 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Alternant Développeur Back-End – Legrand</h5>
+                    <p class="card-text">
+                        <strong>Alternance</strong> – sept. 2023 à août 2024<br>
+                        Développement Node.js, gestion de projet agile, participation à des APIs internes.
+                    </p>
+                    <span class="badge bg-secondary">Node.js</span>
+                    <span class="badge bg-secondary">Agile</span>
+                    <span class="badge bg-secondary">API REST</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expérience 3 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Assistant Développeur Web – Legrand</h5>
+                    <p class="card-text">
+                        <strong>CDD</strong> – juin à juillet 2023<br>
+                        Travaux sur composants front/back, méthodes agiles, industrialisation de scripts.
+                    </p>
+                    <span class="badge bg-secondary">Node.js</span>
+                    <span class="badge bg-secondary">Front-end</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expérience 4 -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Développeur back-end – Legrand</h5>
+                    <p class="card-text">
+                        <strong>Stage</strong> – avril à juin 2023<br>
+                        Premiers développements back-end, intégration et apprentissage des normes d’équipe.
+                    </p>
+                    <span class="badge bg-secondary">Back-End</span>
+                    <span class="badge bg-secondary">Travail en équipe</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="mt-5 text-center">
+    &copy; 2025 Pouyade Samuel. Tous droits réservés.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
