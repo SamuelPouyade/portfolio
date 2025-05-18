@@ -8,24 +8,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Menu</a>
-        <a href="mes-projets.html">Mes Projets</a>
-        <a href="mon-parcours.html">Mon Parcours</a>
-        <a href="mes-competences.html">Mes Compétences</a>
-        <a href="a-propos-de-moi.html">À propos de moi</a>
-    </nav>
 
-    <div class="main-content">
-        <h2>Mes Projets</h2>
-        <p>🚧 En cours de construction... 🚧</p>
-        <div class="spinner" style="animation: spin 1s linear infinite;"></div>
-    </div>
+<nav>
+    <a href="index.html">Menu</a>
+    <a href="mes-projets.html">Mes Projets</a>
+    <a href="mon-parcours.html">Mon Parcours</a>
+    <a href="mes-competences.html">Mes Compétences</a>
+    <a href="a-propos-de-moi.html">À propos de moi</a>
+</nav>
 
-    <footer>
-        &copy; 2025 Pouyade Samuel. Tous droits réservés.
-    </footer>
+<div class="main-content">
+    <h2>Mes Projets GitHub</h2>
+    <div id="github-projects" class="project-grid"></div>
+</div>
 
-    <link rel="stylesheet" href="styles.css">
+<footer>
+    &copy; 2025 Pouyade Samuel. Tous droits réservés.
+</footer>
+
+<script>
+    const container = document.getElementById('github-projects');
+
+    fetch('https://api.github.com/users/SamuelPouyade/repos')
+        .then(response => response.json())
+        .then(repos => {
+            repos.forEach(repo => {
+                const card = document.createElement('div');
+                card.className = 'project-card';
+
+                card.innerHTML = `
+                    <h3>${repo.name}</h3>
+                    <p>${repo.description || "Pas de description"}</p>
+                    <a href="${repo.html_url}" target="_blank">Voir sur GitHub</a>
+                `;
+
+                container.appendChild(card);
+            });
+        })
+        .catch(error => {
+            container.innerHTML = "<p>Impossible de charger les projets pour l'instant.</p>";
+            console.error(error);
+        });
+</script>
+
 </body>
 </html>
