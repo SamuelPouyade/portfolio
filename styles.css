@@ -93,6 +93,44 @@ nav a:hover {
     margin: 20px auto;
 }
 
+.competence-grid {
+    column-count: 2;
+    column-gap: 30px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+@media (min-width: 1000px) {
+    .competence-grid {
+        column-count: 3;
+    }
+}
+
+.competence-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 20px;
+    margin: 0 0 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.competence-card:hover {
+    transform: translateY(-5px);
+    background-color: #f4f4f4;
+}
+
+.competence-card i {
+    font-size: 1.5rem;
+    color: #56ab2f;
+    margin-right: 10px;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
